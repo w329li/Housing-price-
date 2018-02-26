@@ -1,0 +1,8 @@
+#!/bin/bash
+item=$(ls *.attrs*)
+count=0
+for i in ${item}
+do
+    mv -i "${i}" "${count}.attrs"
+    count=$((count + 1))
+done
